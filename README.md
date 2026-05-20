@@ -25,9 +25,8 @@ as a demo corpus.
    space** with `https://github.com/0-bingwu-0/stashbase-cs183b`). The
    index is already built — skip straight to querying.
 2. Open Claude (Desktop / Code), Codex, or any MCP-compatible client and
-   ask `@stashbase <question>` to retrieve across lectures. The in-app
-   terminal has `@stashbase` pre-wired; for external clients, configure
-   the MCP server per the [main README](https://github.com/liliu-z/stashbase#mcp-integration).
+   ask `@stashbase <question>` to retrieve across lectures. The brew
+   install wires up the MCP server automatically — no config needed.
 
 Some queries that exercise different parts of the index:
 
