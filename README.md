@@ -1,41 +1,45 @@
 # stashbase-cs183b
 
 A ready-to-clone [StashBase](https://github.com/liliu-z/stashbase) starter
-space. Drop it into StashBase and you've got an indexed knowledge base to
-poke at without having to seed your own notes first.
+space. Clone it, import it, and you have a real knowledge base to query in
+under a minute — no notes of your own to seed first.
 
 ## What's in here
 
-`transcripts/` — full transcripts of all 20 lectures from Stanford **CS183B:
-How to Start a Startup**, the Y Combinator / Sam Altman course (Airbnb,
-Stripe, Facebook, a16z, Peter Thiel, etc. as guest speakers). One Markdown
-file per lecture, ~150 KB of text total.
+- **`transcripts/`** — full transcripts of all 20 lectures from Stanford
+  **CS183B: How to Start a Startup** (the Y Combinator / Sam Altman course;
+  Airbnb, Stripe, Facebook, a16z, Peter Thiel, etc. as guest speakers). One
+  Markdown file per lecture.
+- **`founder_playbook.html`** — a single HTML notebook distilled from those
+  20 lectures: ~60 founder questions, each answered with principles, a
+  decision framework, a field checklist, and the traps to avoid.
 
-`.stashbase/` — pre-built embedding + index sidecar. Ships in the repo,
-so retrieval works immediately, no first-pass indexing wait.
+That's the whole corpus — the lecture source plus the playbook built on top
+of it.
 
-Topics range from product, growth, hiring, fundraising, sales, enterprise,
-and culture — i.e. enough overlap between files that semantic search
-actually has to disambiguate, which is the whole point of bringing this in
-as a demo corpus.
+The repo also ships a prebuilt index (the embeddings under `.stashbase/`),
+so search works the moment you import — no first-pass indexing wait.
 
-## Using it
+## Get started in 4 steps
 
-1. In StashBase, open a workspace from this folder (or use **Clone repo as
-   space** with `https://github.com/0-bingwu-0/stashbase-cs183b`). The
-   index is already built — skip straight to querying.
-2. Open Claude (Desktop / Code), Codex, or any MCP-compatible client and
-   ask `@stashbase <question>` to retrieve across lectures. The brew
-   install wires up the MCP server automatically — no config needed.
+1. **Clone** this repo:
+   ```
+   git clone https://github.com/0-bingwu-0/stashbase-cs183b
+   ```
+2. **Import** the folder into StashBase as a space (or use **Clone repo as
+   space** with the URL above).
+3. **View** `founder_playbook.html` — open it in StashBase to read the
+   playbook rendered inline.
+4. **Ask the built-in Claude agent.** Open the agent panel and put a
+   question to it — it searches across the playbook and all 20 transcripts
+   to answer. Three to start with, straight from the playbook:
 
-Some queries that exercise different parts of the index:
-
-- *"How does Sam Altman think about pivots?"* — touches L1, L4, L20.
-- *"Founder relationships and co-founder breakups"* — L2, L10, L13.
-- *"When should I hire a VP of sales?"* — L12, L19.
+   - *"How do I find a startup idea?"*
+   - *"How do I know if I have product-market fit?"*
+   - *"Should I worry about competitors and being copied?"*
 
 ## Source
 
 Transcripts are the publicly available course materials from Stanford
-CS183B (Fall 2014). Original course site: <https://startupclass.samaltman.com/>.
+CS183B (Fall 2014). Course materials: <https://genius.com/albums/Sam-altman/How-to-start-a-startup-cs183b>.
 No edits beyond light formatting for Markdown.
