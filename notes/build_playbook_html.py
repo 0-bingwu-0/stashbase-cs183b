@@ -271,7 +271,7 @@ _stations = ""
 for i, ch in enumerate(chapters):
     r, pos = i // COLS, i % COLS
     col = pos if r % 2 == 0 else COLS - 1 - pos
-    _stations += (f'<a class="mstation" href="#ch-{i+1}" style="left:{xpct[col]:.3f}%;top:{ypct[r]:.3f}%" '
+    _stations += (f'<a class="mstation" href="#ch-{i+1}" style="left:{cx[col]:.1f}px;top:{cy[r]:.1f}px" '
                   f'title="{html.escape(ch["name"])}">'
                   f'<span class="ms-node">{i+1:02d}</span>'
                   f'<span class="ms-label">{html.escape(ch["name"])}</span></a>')
@@ -377,10 +377,10 @@ code{font-family:var(--mono);font-size:.85em;background:var(--accent-tint);paddi
 
 /* ===== decision map (top overview) ===== */
 .map{background:var(--paper2);border-bottom:1px solid var(--rule);scroll-margin-top:var(--bar)}
-.map-in{max-width:1180px;margin:0 auto;padding:24px 40px 26px}
+.map-in{max-width:1180px;margin:0 auto;padding:32px 40px 36px}
 .metro-wrap{overflow:hidden;display:flex;justify-content:center;margin:6px 0 0}
-.metro{position:relative;width:960px;height:300px;flex:none;transform-origin:top center}
-.metro-line{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.metro{position:relative;width:960px;height:336px;flex:none;transform-origin:top center}
+.metro-line{position:absolute;top:0;left:0;width:960px;height:300px;overflow:visible}
 .mstation{position:absolute;transform:translate(-50%,-50%);width:44px;height:44px;text-decoration:none}
 .ms-node{position:relative;z-index:1;width:44px;height:44px;border-radius:50%;
   border:2px solid var(--accent);background:var(--paper2);color:var(--accent);
