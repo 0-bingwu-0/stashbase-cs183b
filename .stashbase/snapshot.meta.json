@@ -6,7 +6,7 @@
     "model": "text-embedding-3-small",
     "dim": 1536
   },
-  "vectors": 1107,
-  "chunks": 2327,
-  "exported_at": "2026-06-15T16:48:28.244Z"
+  "vectors": 1058,
+  "chunks": 1401,
+  "exported_at": "2026-06-16T10:37:17.286Z"
 }

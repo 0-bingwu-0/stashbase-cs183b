@@ -17,8 +17,9 @@ under a minute — no notes of your own to seed first.
 That's the whole corpus — the lecture source plus the playbook built on top
 of it.
 
-The repo also ships a prebuilt index (the embeddings under `.stashbase/`),
-so search works the moment you import — no first-pass indexing wait.
+The repo also ships prebuilt embeddings (under `.stashbase/`), so importing
+reuses them instead of re-embedding the whole course. Search and the built-in
+agent run on an OpenAI key — add one in Settings if you haven't.
 
 ## Get started in 4 steps
 
@@ -26,8 +27,8 @@ so search works the moment you import — no first-pass indexing wait.
    ```
    git clone https://github.com/0-bingwu-0/stashbase-cs183b
    ```
-2. **Import** the folder into StashBase as a space (or use **Clone repo as
-   space** with the URL above).
+2. **Import** the folder into StashBase as a space — use **Import folder** on
+   the Welcome screen and pick the cloned directory.
 3. **View** `founder_playbook.html` — open it in StashBase to read the
    playbook rendered inline.
 4. **Ask the built-in Claude agent.** Open the agent panel and put a
